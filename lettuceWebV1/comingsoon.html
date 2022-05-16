@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LETTUCE | Tools for better experience built on Arbitrum</title>
+    <meta name="keywords" content="dex exchange portfolio tracker launchpad layer 2 eth ethereum layer 2 arbitrum ido bridge gateway"/>
+    <meta name="description" content="Lettuce swap is a Dex that can help track and mange your portfolio with her portfolio tracker, You can execute transactions across Arbitrum and bridge platforms that supports Arbitrum Network, lettuce launchpad and more."/>
+    <link rel = "icon" type = "image/png" href = "logo1.png">
+    <link rel="stylesheet" href="lettuce.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+</head>
+<body>
+    <nav id="Home">
+        <div class="logo01">
+            <p>lettuce</p>
+        </div>
+        <div id="toggle"></div>
+        <div id="navbar">
+            <ul>
+                <li><a href="lettuce.html#Home" target="_blank">home</a></li>
+                <li><a href="#Swap" class="active">Swap</a></li>
+                <li><a href="#">Portfolio Tracker</a></li>
+                <li><a href="#">launchpad</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section>
+        <div class="home">
+            <div id="particles-js"></div>
+            <script src="particles.js"></script>
+            <script src="app.js"></script>
+            <div class="banner-area">
+                <h2>COMING SOON <span class="typed2"></span></h2>
+            </div>
+        </div>
+    </section>
+
+    <footer class="NewGlobalFooter__Styled-sc-1odo746-0 eqfCpt">
+        <div class="footer" >
+            <h2 class="title2" id="Contact">LETTUCE</h2>
+            <p>TOOLS FOR BETTER EXPERIENCE BUILT FOR ARBITRUM USERS</p>
+            <p>Join Community</p>
+            <div class="items">
+                <a class="item" href="https://mobile.twitter.com/Lettuce_Swap" target="_blank">Twitter</a>
+                <a class="item" href="https://medium.com/@swaplettuce" target="_blank">Medium</a>
+                <a class="item" href="https://t.me/LettuceSwap" target="_blank">Telegram</a>
+            <a class="item" href="https://discord.gg/2nJ5hPSS" target="_blank">Discord</a>
+                <a class="item" href="https://github.com/LettuceSwap/" target="_blank">Github</a>
+            </div>
+        </div>
+    </footer>
+    <p class="tip">© 2022 LettuceSwap All rights reserved.</p>
+        
+    
+    <script src="typed.js"></script>
+    <script>
+        var typed = new Typed('.typed2', {
+            strings: ["SWAP.","PORTFORLIO","TRACKER.", 
+            "LAUNCHPAD.", "AND MORE.", "ON", "ARBITRUM."],
+            typeSpeed: 50,
+            backspeed: 50,
+            loop: true
+       });
+
+    </script>
+        <script>
+            $('.accordion-item') .click(function()
+            {
+                $(this).find('.answer') .slideToggle('fast');
+            });
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <script>
+        const header = document.getElementById('Home');
+        const toggle = document.getElementById('toggle');
+        const navbar = document.getElementById('navbar');
+
+        document.onclick = function(e) {
+            if(e.target.id !== 'header' && e.target.id !== 'toggle' && e.target.id !== 'navbar'){
+                toggle.classList.remove('active');
+                navbar.classList.remove('active');
+            }
+        }
+
+        toggle.onclick = function(){
+            toggle.classList.toggle('active');
+            navbar.classList.toggle('active');
+        }
+    </script>
+
+
+</body>
